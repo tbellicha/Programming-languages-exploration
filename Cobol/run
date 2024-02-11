@@ -1,0 +1,3 @@
+#/bin/sh
+# I deserve an A because I made a bash script to run the program :eyes:
+clear && cobc -x program.cbl multi-param.cbl && ./program
