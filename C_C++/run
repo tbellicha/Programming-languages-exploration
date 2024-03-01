@@ -1,0 +1,2 @@
+#/bin/sh
+clear && make re && make clean && ./exec_c && ./exec_cpp
