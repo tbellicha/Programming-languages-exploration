@@ -2,4 +2,5 @@ a.out
 *.mod
 program
 .vscode
+exec_*
 *.o
