@@ -26,4 +26,20 @@ private:
     std::string teamsColor;
 };
 
+class childDriver : public Driver
+{
+public:
+    enumTires tire;
+
+    childDriver(enumTeams teamParam, enumDrivers driverParam, enumTires tireParam, int lapsParam) : Driver(teamParam, driverParam), tire(tireParam)
+    {
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const childDriver &driver)
+    {
+        os << driversMap[driver.driver] << " (" << teamsMap[driver.team] << ")";
+        return os;
+    }
+};
+
 #endif // DRIVERS_HPP
