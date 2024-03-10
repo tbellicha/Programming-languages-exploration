@@ -4,3 +4,10 @@ program
 .vscode
 exec_*
 *.o
+
+*.class
+*.jar
+
+.clj-kondo
+.lsp
+.cpcache
