@@ -22,9 +22,13 @@ fun execDoWhileLoop() {
     } while (i <= 10)
 }
 
+fun stringConcatenation(s1: String, s2: String): String {
+    return s1 + s2
+}
 
 fun main() {
     execForLoop()
     execWhileLoop()
     execDoWhileLoop()
+    println(stringConcatenation("Hello ", "world"))
 }
