@@ -14,22 +14,19 @@
     (println x)))
 
 (defn execLoop []
-  (loop [x 42]
+  (loop [x 42.0]
     (when (< x 45)
       (println x)
       (recur (inc x)))))
 
-(defn stringConcat []
-  (let [s "String "
-        w "Concatenation"]
-    (println (str s w))))
-
+(defn stringConcat [s w]
+  (str s w))
 
 (defn -main []
   (execWhileLoop)
   (execDoSeqLoop)
   (execDoTimesLoop)
   (execLoop)
-  (stringConcat))
+  (println (stringConcat "Hello " "world")))
 
 (-main)
