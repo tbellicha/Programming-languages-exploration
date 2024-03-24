@@ -27,4 +27,7 @@ public class requirements {
         } while (i++ < 8);
     }
 
+    static String stringConcatenation(String s1, String s2) {
+        return s1 + s2;
+    }
 }

@@ -8,6 +8,8 @@ public class program {
         requirements.execWhileLoop();
         requirements.execDoWhileLoop();
 
+        System.out.println(requirements.stringConcatenation("Hello ", "world"));
+
         hangman.play();
     }
 }
